@@ -45,11 +45,11 @@ Here is a link to my [project code](https://github.com/hassanikyz/CarND-Traffic-
 
 I used the numpy and pandas libraries to collect summary statistics of the traffic signs data set:
 
-Number of training examples = 34799
-Number of testing examples = 12630
-Number of validation examples = 4410
-Image data shape (shape of traffic sign image) = (32, 32, 3)
-Number of categories/classes = 43
+*Number of training examples = 34799
+*Number of testing examples = 12630
+*Number of validation examples = 4410
+*Image data shape (shape of traffic sign image) = (32, 32, 3)
+*Number of categories/classes = 43
      ClassId                                           SignName
         0                               Speed limit (20km/h)
         1                               Speed limit (30km/h)
