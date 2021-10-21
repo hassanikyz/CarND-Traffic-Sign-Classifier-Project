@@ -37,7 +37,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-Here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+Here is a link to my [project code](https://github.com/hassanikyz/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -154,6 +154,7 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
 LENET-5 was given and suggested by instructors and it was already setup for MNIST data. There are many parallels between MNIST and Traffic Sign classification problem. Using that as the starting point therefore made sense.
 
 * What were some problems with the initial architecture?
@@ -161,9 +162,10 @@ It didn't have dropouts which proved to be a bit more effective. As-is version o
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
-Mainly dropouts after relu and an additional convolutional layer was added to improve accuracy and reduce over-fitting.
+Mainly dropouts after relu and an additional convolutional layer were added to improve accuracy and reduce over-fitting.
 
 * Which parameters were tuned? How were they adjusted and why?
+
 Hyperparameters impact wasn't that big. Tried few learing rates and batch sizes. The biggest difference came from architectural updates. Afer trying 0.0006, 0.0009 and I settled for 0.001 for learning rate and batch size of 28. Dropout was set at 0.5
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
@@ -171,12 +173,15 @@ It reduce chances of overfitting and thus enable model to scale better.
 
 If a well known architecture was chosen:
 * What architecture was chosen?
+*
 Lenet-5 as this was given by Udacity to be a good starting point. It has performed well for MNIST (hardwritten digits recognition).
 
 * Why did you believe it would be relevant to the traffic sign application?
+
 Several aspects of LENET-5's original design intent as similar to traffic signs. The traffic signs are classified into a discrete set of 43 (MNIST is 10). Signs have relatively stable feature pattern just like digits.
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+
 There isn't a huge difference between training and validatoin accuracy which shows mode isn't overly fit by the training data.
  
 
