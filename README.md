@@ -115,7 +115,7 @@ Here is an example of a traffic sign image before and after grayscaling.
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
-Initial model was based on LENET however, its accuracy at most went up to 88 or so after playing with hyperparameters like batch size, training rate. Adding droputs increased accuracy to around 91 but it finally crossed 93 when preprocessing of images was added -- mainly grayscaling and normalization. 
+Initial model was based on LENET-5 however, its accuracy at most went up to 88 or so after playing with hyperparameters like batch size, training rate. Adding droputs increased accuracy to around 91 but it finally crossed 93 when preprocessing of images was added -- mainly grayscaling and normalization. 
 
 My final model consisted of the following layers:
 
@@ -142,15 +142,15 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-Initially I simply used Lenet architecture without any preprocessing where with adjustments were required in handling RGB images.
-That didn't give high enough accuracy, it was somewhere in the high 80s range. By reducing the learning rate from 0.001 to 0.0009 I saw accuracy improved a bit. Initially I used batchsize of 128 and played with various values of epocs e.g 50, 60, 70. However, those didn't increase accuracy significantly. 
+Initially I simply used Lenet architecture without any preprocessing where adjustments were required for handling RGB images.
+That didn't give high enough accuracy, it was somewhere in the high 80s range. By reducing the learning rate from 0.001 to 0.0009 I saw accuracy improved a bit. Initially I used batchsize of 128 and played with various values of epochs e.g 50, 60, 70. However, those didn't increase accuracy significantly. 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-*Train Accuracy = 0.987
-*Test Accuracy = 0.937
-*Valid Accuracy = 0.963
+* Train Accuracy = 0.987
+* Test Accuracy = 0.937
+* Valid Accuracy = 0.963
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
