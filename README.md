@@ -154,9 +154,11 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+-----
 LENET-5 was given and suggested by instructors and it was already setup for MNIST data. There are many parallels between MNIST and Traffic Sign classification problem. Using that as the starting point therefore made sense.
 
 * What were some problems with the initial architecture?
+------
 It didn't have dropouts which proved to be a bit more effective. As-is version of LENET-5 didn't get accuracy above 0.88 in my runs. Additional convolution layer also helped taking the accuracy up to 96%
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
@@ -193,17 +195,17 @@ Here are five German traffic signs that I found on the web:
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
+Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Turn left ahead          			| Turn left ahead   									| 
+| Priority Road    				| Priority Road 										|
+| Yield 					| Yield											|
+| No Passin 					| No Passing											|
+| Right of the way	      			| Right of the way					 				|
+| Wild Animal crossing				    | Wild Animal crossing      							|
 
-
-![alt text][image5] 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 83%. This compares favorably to the accuracy on the test set. However, after I added modified images (rotation and perspective transformed), that number went up to 100%
 
@@ -215,14 +217,15 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| .98         			| Turn left ahead   									| 
+| 1.0     				| Priority Road 										|
+| 1.0 					| Yield											|
+| 0.88 					| No Passing											|
+| .99	      			| Right of the way					 				|
+| 1.0				    | Wild Animal crossing      							|
 
 
-For the second image ... 
+![alt text][image6] 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
