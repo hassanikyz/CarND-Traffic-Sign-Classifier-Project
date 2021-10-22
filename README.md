@@ -99,7 +99,7 @@ I used the numpy and pandas libraries to collect summary statistics of the traff
 
 Here is an exploratory visualization of the data set. It is a histogram and bar charts showing how the data is labeled across 43 different classes
 
-
+![alt text][image7]
 ![alt text][image1]
 
 ### Design and Test a Model Architecture
