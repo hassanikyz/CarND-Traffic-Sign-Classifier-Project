@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/test_image_from_web.jpg "Test Images From Web"
 [image5]: ./examples/random_samples.jpg "Random Samples From Training Data"
-[image6]: ./examples/top-5-prediction.jpg "Top 5 Predictions"
+[image6]: ./examples/top-5-prediction1.jpg "Top 5 Predictions"
 [image7]: ./examples/visualization1.jpg "Visualization 1"
 [image8]: ./examples/mode-tain1.jpg "Model Training Start"
 [image9]: ./examples/mode-tain2.jpg "Model Training End"
